@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/mais_informacoes"
+        android:icon="@drawable/ic_info_rede"
+        android:title="@string/mais_informaoes" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/roteador"
+        android:title="@string/acesso_roteador" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/geradorSenhaItem"
+        android:title="@string/gerador_senha" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/sobre"
+        android:title="@string/sobre" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/politicaPrivacidade"
+        android:title="@string/politica_privacidade" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/apoieItem"
+        android:title="@string/apoie" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/avaliarItem"
+        android:title="@string/avaliacao_app" />
+</menu>

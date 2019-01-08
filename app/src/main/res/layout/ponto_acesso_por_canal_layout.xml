@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_16dp"
+    android:paddingEnd="@dimen/margin_16dp"
+    android:paddingLeft="@dimen/margin_16dp"
+    android:paddingRight="@dimen/margin_16dp"
+    android:paddingStart="@dimen/margin_16dp"
+    android:paddingTop="@dimen/margin_16dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cinza_claro"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tituloPontoAcessoPorCanalLayout"
+            layout="@layout/row_ponto_acesso_por_canal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewContaAps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_8dp"
+            tools:listitem="@layout/row_ponto_acesso_por_canal" />
+
+        <include
+            android:id="@+id/progressoAps"
+            layout="@layout/progressbar_layout"/>
+
+    </FrameLayout>
+
+</LinearLayout>

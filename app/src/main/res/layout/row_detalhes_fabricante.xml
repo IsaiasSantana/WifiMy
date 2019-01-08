@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/altura_row_fabricante"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTituloRow"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_titulo"
+        android:layout_marginRight="@dimen/margin_titulo"
+        android:gravity="center"
+        android:text="@string/companhia"
+        android:textColor="@color/cor_preto_label" />
+
+    <com.elyeproj.loaderviewlibrary.LoaderTextView
+        android:id="@+id/tvConteudoRow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="end|center"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/imgCopiar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/editar_descricao"
+        android:src="@drawable/ic_editar" />
+
+</LinearLayout>

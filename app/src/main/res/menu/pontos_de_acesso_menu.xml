@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom"
+        android:id="@+id/ordenarApsItem"
+        android:contentDescription="@string/ordenar_por"
+        android:title="@string/ordenar_por" />
+
+    <item
+        app:showAsAction="never"
+        android:id="@+id/contaApsItem"
+        android:title="@string/visualiza_canais" />
+
+    <!--<item-->
+        <!--android:visible="false"-->
+        <!--app:showAsAction="never"-->
+        <!--android:id="@+id/graficoLinhaItem"-->
+        <!--android:title="@string/grafico_linha" />-->
+</menu>

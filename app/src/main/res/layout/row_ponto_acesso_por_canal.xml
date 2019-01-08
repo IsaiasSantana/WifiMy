@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+    <TextView
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:id="@+id/canalTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/divisor"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="@dimen/margin_8dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/cor_divisor"/>
+
+    <TextView
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:id="@+id/totalPontosAcessoTextView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

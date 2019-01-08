@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="@dimen/titulo_tamanho"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cinza_claro"
+        android:gravity="center"
+        android:text="@string/pesquisa_mac_mensagem"
+        android:textColor="@color/cinza_claro2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cabecalhoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:focusable="true"
+                    android:id="@+id/etMac"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginEnd="@dimen/margin_16dp"
+                    android:layout_marginLeft="@dimen/margin_16dp"
+                    android:layout_marginRight="@dimen/margin_16dp"
+                    android:layout_marginStart="@dimen/margin_16dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:background="@drawable/shape_campo_pesquisa"
+                    android:gravity="start|center"
+                    android:hint="@string/endereco_mac_hint"
+                    android:inputType="text"
+                    android:paddingEnd="@dimen/margin_16dp"
+                    android:paddingLeft="@dimen/margin_16dp"
+                    android:paddingRight="@dimen/margin_16dp"
+                    android:paddingStart="@dimen/margin_16dp"
+                    android:textColor="#7A797B"
+                    android:textColorHint="#7A797B" />
+
+                <Button
+                    android:id="@+id/btnPesquisar"
+                    android:layout_width="150dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:background="@drawable/shape_botao"
+                    android:text="@string/pesquisar"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="@dimen/margin_16dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <include
+                    android:id="@+id/detalhesFabricanteLayout"
+                    layout="@layout/detalhes_fabricante_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progressoBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    tools:visibility="visible" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/banner_layout" />
+</LinearLayout>

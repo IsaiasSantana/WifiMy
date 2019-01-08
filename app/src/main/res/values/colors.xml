@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1F8CB6</color>
+    <color name="colorPrimaryDark"> #1577A5</color>
+    <color name="colorAccent">#44A4C6</color>
+    <color name="cinza_claro">#F9F9FA</color>
+    <color name="cinza_claro2">#AFB8BB</color>
+    <color name="cor_divisor">#EEF3F5</color>
+    <color name="cor_preto_label">#233539</color>
+    <color name="cor_preto_descricao">#233539</color>
+    <color name="cor_wifi_sinal_0">#BF0008</color>
+    <color name="cor_wifi_sinal_1_2">#FFB70B</color>
+    <color name="cor_wifi_sinal_3">#08B312</color>
+    <color name="cor_wifi_sinal_4">#007A14</color>
+    <color name="cinza">#99DEDEE3</color>
+</resources>

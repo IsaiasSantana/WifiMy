@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/circle_progress"
+        android:layout_gravity="center"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:arc_unfinished_color="@color/colorPrimary"
+        app:arc_finished_color="@android:color/white"
+        app:arc_bottom_text="@string/info_processando"
+        app:arc_bottom_text_size="12sp"
+        app:arc_progress="0" />
+
+    <TextView
+        android:id="@+id/tvCarregandoAnuncio"
+        android:textSize="16sp"
+        android:text="@string/mostrando_anuncio"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

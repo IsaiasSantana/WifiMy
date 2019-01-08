@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titulo_altura"
+        android:gravity="center"
+        android:text="@string/gerador_senha"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/tam_texto_18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/margin_16dp"
+                android:paddingLeft="@dimen/margin_16dp"
+                android:paddingRight="@dimen/margin_16dp"
+                android:paddingStart="@dimen/margin_16dp">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkLetrasMaiusculas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/upper_case" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkLetrasMinusculas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/lower_case" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/margin_16dp"
+                android:paddingLeft="@dimen/margin_16dp"
+                android:paddingRight="@dimen/margin_16dp"
+                android:paddingStart="@dimen/margin_16dp">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/checkNumeros"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/numbers" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:layout_marginBottom="@dimen/margin_8dp"
+                    android:id="@+id/checkCaracteresEspeciais"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/caract_especiais" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titulo_altura"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:background="@color/cinza_claro"
+                android:gravity="center"
+                android:text="@string/password_length"
+                android:textColor="@color/cinza_claro2"
+                android:textSize="@dimen/tam_texto_14sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTamSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/margin_8dp"
+                android:paddingLeft="@dimen/margin_16dp"
+                android:paddingRight="@dimen/margin_8dp"
+                android:paddingStart="@dimen/margin_16dp">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radioTamSenha8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/length_password_8" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radioTamSenha16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/margin_8dp"
+                    android:layout_marginLeft="@dimen/margin_8dp"
+                    android:layout_marginRight="@dimen/margin_8dp"
+                    android:layout_marginStart="@dimen/margin_8dp"
+                    android:text="@string/length_password_16" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radioTamSenha24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/length_password_24" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/senhaGeradaTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:paddingEnd="@dimen/margin_16dp"
+                android:paddingLeft="@dimen/margin_16dp"
+                android:paddingRight="@dimen/margin_16dp"
+                android:paddingStart="@dimen/margin_16dp"
+                android:text="@string/dica_senha"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgCopiarSenha"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:contentDescription="@string/copy_password"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_editar" />
+
+            <Button
+                android:id="@+id/gerarSenhaButton"
+                android:layout_width="200dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@drawable/shape_botao"
+                android:text="@string/gerar_senha"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/banner_layout" />
+</LinearLayout>

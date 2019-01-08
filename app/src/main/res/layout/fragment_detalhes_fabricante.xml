@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".fragmentos.DetalhesFabricanteFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titulo_altura"
+                android:background="@color/cinza_claro"
+                android:gravity="center"
+                android:text="@string/detalhes_fabricante"
+                android:textColor="@color/cinza_claro2" />
+
+            <include
+                android:id="@+id/rowCompanhia"
+                layout="@layout/row_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp" />
+
+            <include
+                android:id="@+id/rowPais"
+                layout="@layout/row_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp" />
+
+            <include
+                android:id="@+id/rowTipo"
+                layout="@layout/row_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_8dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp" />
+
+            <TextView
+                android:id="@+id/tvTituloEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titulo_altura"
+                android:background="@color/cinza_claro"
+                android:gravity="center"
+                android:text="@string/endereco"
+                android:textColor="@color/cinza_claro2" />
+
+            <com.elyeproj.loaderviewlibrary.LoaderTextView
+                android:id="@+id/tvEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:gravity="start|center"
+                android:textColor="@color/cor_preto_descricao" />
+
+            <TextView
+                android:id="@+id/tvTituloMacIp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/titulo_altura"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/cinza_claro"
+                android:gravity="center"
+                android:text="@string/endereco_ip_mac"
+                android:textColor="@color/cinza_claro2" />
+
+            <include
+                android:id="@+id/rowEnderecoIp"
+                layout="@layout/row_detalhes_fabricante"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/altura_row_fabricante"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:background="@color/cor_divisor" />
+
+            <include
+                android:id="@+id/rowEnderecoMac"
+                layout="@layout/row_detalhes_fabricante"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/altura_row_fabricante"
+                android:layout_marginLeft="@dimen/margin_16dp"
+                android:layout_marginRight="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_8dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

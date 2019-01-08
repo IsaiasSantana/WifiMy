@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cinza_claro"
+    android:paddingTop="@dimen/margin_16dp"
+    tools:context=".fragmentos.CanaisWifiFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/recyclerViewAPs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="@dimen/margin_16dp"
+            android:paddingRight="@dimen/margin_16dp"
+            tools:listitem="@layout/row_ponto_acesso" />
+
+        <include layout="@layout/banner_layout" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loadingView"
+        layout="@layout/progressbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_bottom_navigation" />
+
+    <TextView
+        android:id="@+id/tvDescricaoApsAndroid6Superior"
+        android:layout_gravity="center"
+        android:text="@string/descricao_android_p"
+        android:textSize="@dimen/tam_texto_18sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
